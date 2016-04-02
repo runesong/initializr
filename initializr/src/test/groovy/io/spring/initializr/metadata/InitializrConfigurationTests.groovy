@@ -29,57 +29,57 @@ class InitializrConfigurationTests {
 
 	@Test
 	void generateApplicationNameSimple() {
-		assertEquals 'DemoApplication', this.properties.generateApplicationName('demo')
+		assertEquals 'Main', this.properties.generateApplicationName('demo')
 	}
 
 	@Test
 	void generateApplicationNameSimpleApplication() {
-		assertEquals 'DemoApplication', this.properties.generateApplicationName('demoApplication')
+		assertEquals 'Main', this.properties.generateApplicationName('demoApplication')
 	}
 
 	@Test
 	void generateApplicationNameSimpleCamelCase() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('myDemo')
+		assertEquals 'Main', this.properties.generateApplicationName('myDemo')
 	}
 
 	@Test
 	void generateApplicationNameSimpleUnderscore() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('my_demo')
+		assertEquals 'Main', this.properties.generateApplicationName('my_demo')
 	}
 
 	@Test
 	void generateApplicationNameSimpleColon() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('my:demo')
+		assertEquals 'Main', this.properties.generateApplicationName('my:demo')
 	}
 
 	@Test
 	void generateApplicationNameSimpleSpace() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('my demo')
+		assertEquals 'Main', this.properties.generateApplicationName('my demo')
 	}
 
 	@Test
 	void generateApplicationNamSimpleDash() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('my-demo')
+		assertEquals 'Main', this.properties.generateApplicationName('my-demo')
 	}
 
 	@Test
 	void generateApplicationNameUpperCaseUnderscore() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('MY_DEMO')
+		assertEquals 'Main', this.properties.generateApplicationName('MY_DEMO')
 	}
 
 	@Test
 	void generateApplicationNameUpperCaseDash() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('MY-DEMO')
+		assertEquals 'Main', this.properties.generateApplicationName('MY-DEMO')
 	}
 
 	@Test
 	void generateApplicationNameMultiSpaces() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('   my    demo ')
+		assertEquals 'Main', this.properties.generateApplicationName('   my    demo ')
 	}
 
 	@Test
 	void generateApplicationNameMultiSpacesUpperCase() {
-		assertEquals 'MyDemoApplication', this.properties.generateApplicationName('   MY    DEMO ')
+		assertEquals 'Main', this.properties.generateApplicationName('   MY    DEMO ')
 	}
 
 	@Test

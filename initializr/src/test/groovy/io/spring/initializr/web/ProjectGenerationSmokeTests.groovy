@@ -167,7 +167,7 @@ class ProjectGenerationSmokeTests extends AbstractInitializrControllerIntegratio
 			at HomePage
 			zipProjectAssert(from('demo.zip'))
 					.hasBaseDir("demo")
-					.isJavaProject('org.foo', 'DemoApplication')
+					.isJavaProject('org.foo', 'Main')
 		}
 	}
 
@@ -179,7 +179,7 @@ class ProjectGenerationSmokeTests extends AbstractInitializrControllerIntegratio
 			at HomePage
 			zipProjectAssert(from('my-project.zip'))
 					.hasBaseDir("my-project")
-					.isJavaProject('com.example', 'MyProjectApplication')
+					.isJavaProject('com.example', 'Main')
 		}
 	}
 
@@ -251,7 +251,7 @@ class ProjectGenerationSmokeTests extends AbstractInitializrControllerIntegratio
 			def projectAssert = zipProjectAssert(from('foo-bar.zip'))
 			projectAssert.hasBaseDir("foo-bar")
 					.isMavenProject()
-					.isJavaProject('com.example.foo', 'MyProjectApplication')
+					.isJavaProject('com.example.foo', 'Main')
 					.hasStaticAndTemplatesResources(true)
 					.pomAssert()
 					.hasGroupId('com.acme')
@@ -394,7 +394,7 @@ class ProjectGenerationSmokeTests extends AbstractInitializrControllerIntegratio
 			def projectAssert = zipProjectAssert(from('my-project.zip'))
 			projectAssert.hasBaseDir('my-project')
 					.isMavenProject()
-					.isJavaProject('com.example.acme', 'MyProjectApplication' )
+					.isJavaProject('com.example.acme', 'Main' )
 					.hasStaticAndTemplatesResources(false)
 					.pomAssert()
 					.hasGroupId('com.example.acme')

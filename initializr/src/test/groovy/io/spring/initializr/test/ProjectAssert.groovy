@@ -29,7 +29,7 @@ class ProjectAssert {
 
 	public static final DEFAULT_PACKAGE_NAME = 'com.example'
 
-	public static final DEFAULT_APPLICATION_NAME = 'DemoApplication'
+	public static final DEFAULT_APPLICATION_NAME = 'Main'
 
 	final File dir
 	Boolean mavenProject

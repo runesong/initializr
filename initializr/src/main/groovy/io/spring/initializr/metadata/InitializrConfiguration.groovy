@@ -47,22 +47,22 @@ class InitializrConfiguration {
 	 * @see Env#invalidApplicationNames
 	 */
 	String generateApplicationName(String name) {
-		if (!name) {
+//		if (!name) {
 			return env.fallbackApplicationName
-		}
-		String text = splitCamelCase(name.trim())
-		String result = text.replaceAll("(_|-| |:)+([A-Za-z0-9])", { Object[] it ->
-			it[2].toUpperCase()
-		})
-		if (!result.endsWith('Application')) {
-			result += 'Application'
-		}
-		String candidate = result.capitalize();
-		if (hasInvalidChar(candidate) || env.invalidApplicationNames.contains(candidate)) {
-			return env.fallbackApplicationName
-		} else {
-			return candidate
-		}
+//		}
+//		String text = splitCamelCase(name.trim())
+//		String result = text.replaceAll("(_|-| |:)+([A-Za-z0-9])", { Object[] it ->
+//			it[2].toUpperCase()
+//		})
+//		if (!result.endsWith('Application')) {
+//			result += 'Application'
+//		}
+//		String candidate = result.capitalize();
+//		if (hasInvalidChar(candidate) || env.invalidApplicationNames.contains(candidate)) {
+//			return env.fallbackApplicationName
+//		} else {
+//			return candidate
+//		}
 	}
 
 	/**
@@ -130,7 +130,7 @@ class InitializrConfiguration {
 		/**
 		 * The application name to use if none could be generated.
 		 */
-		String fallbackApplicationName = 'Application'
+		String fallbackApplicationName = 'Main'
 
 		/**
 		 * The list of invalid application names. If such name is chosen or generated,

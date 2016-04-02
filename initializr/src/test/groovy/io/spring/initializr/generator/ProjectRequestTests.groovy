@@ -226,7 +226,7 @@ class ProjectRequestTests {
 		def metadata = InitializrMetadataTestBuilder.withDefaults().build()
 
 		request.resolve(metadata)
-		assertEquals 'Foo2Application', request.applicationName
+		assertEquals 'Main', request.applicationName
 	}
 
 	@Test

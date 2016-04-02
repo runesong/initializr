@@ -190,7 +190,7 @@ class ProjectGeneratorTests {
 		request.bootVersion = '1.1.9.RELEASE'
 		request.name = 'MyDemo'
 		request.packageName = 'foo'
-		generateProject(request).sourceCodeAssert('src/main/java/foo/MyDemoApplication.java')
+		generateProject(request).sourceCodeAssert('src/main/java/foo/Main.java')
 				.hasImports(EnableAutoConfiguration.class.name, ComponentScan.class.name, Configuration.class.name)
 				.doesNotHaveImports(SpringBootApplication.class.name)
 				.contains('@EnableAutoConfiguration', '@Configuration', '@ComponentScan')
@@ -203,7 +203,7 @@ class ProjectGeneratorTests {
 		request.bootVersion = '1.2.0.RC1'
 		request.name = 'MyDemo'
 		request.packageName = 'foo'
-		generateProject(request).sourceCodeAssert('src/main/java/foo/MyDemoApplication.java')
+		generateProject(request).sourceCodeAssert('src/main/java/foo/Main.java')
 				.hasImports(SpringBootApplication.class.name)
 				.doesNotHaveImports(EnableAutoConfiguration.class.name, ComponentScan.class.name, Configuration.class.name)
 				.contains('@SpringBootApplication')
@@ -217,7 +217,7 @@ class ProjectGeneratorTests {
 		request.bootVersion = '1.1.9.RELEASE'
 		request.name = 'MyDemo'
 		request.packageName = 'foo'
-		generateProject(request).sourceCodeAssert('src/main/groovy/foo/MyDemoApplication.groovy')
+		generateProject(request).sourceCodeAssert('src/main/groovy/foo/Main.groovy')
 				.hasImports(EnableAutoConfiguration.class.name, ComponentScan.class.name, Configuration.class.name)
 				.doesNotHaveImports(SpringBootApplication.class.name)
 				.contains('@EnableAutoConfiguration', '@Configuration', '@ComponentScan')
@@ -231,7 +231,7 @@ class ProjectGeneratorTests {
 		request.bootVersion = '1.2.0.RC1'
 		request.name = 'MyDemo'
 		request.packageName = 'foo'
-		generateProject(request).sourceCodeAssert('src/main/groovy/foo/MyDemoApplication.groovy')
+		generateProject(request).sourceCodeAssert('src/main/groovy/foo/Main.groovy')
 				.hasImports(SpringBootApplication.class.name)
 				.doesNotHaveImports(EnableAutoConfiguration.class.name, ComponentScan.class.name, Configuration.class.name)
 				.contains('@SpringBootApplication')
@@ -245,7 +245,7 @@ class ProjectGeneratorTests {
 		request.bootVersion = '1.1.9.RELEASE'
 		request.name = 'MyDemo'
 		request.packageName = 'foo'
-		generateProject(request).sourceCodeAssert('src/main/kotlin/foo/MyDemoApplication.kt')
+		generateProject(request).sourceCodeAssert('src/main/kotlin/foo/Main.kt')
 				.hasImports(EnableAutoConfiguration.class.name, ComponentScan.class.name, Configuration.class.name)
 				.doesNotHaveImports(SpringBootApplication.class.name)
 				.contains('@EnableAutoConfiguration', '@Configuration', '@ComponentScan')
@@ -259,7 +259,7 @@ class ProjectGeneratorTests {
 		request.bootVersion = '1.2.0.RC1'
 		request.name = 'MyDemo'
 		request.packageName = 'foo'
-		generateProject(request).sourceCodeAssert('src/main/kotlin/foo/MyDemoApplication.kt')
+		generateProject(request).sourceCodeAssert('src/main/kotlin/foo/Main.kt')
 				.hasImports(SpringBootApplication.class.name)
 				.doesNotHaveImports(EnableAutoConfiguration.class.name, ComponentScan.class.name, Configuration.class.name)
 				.contains('@SpringBootApplication')
