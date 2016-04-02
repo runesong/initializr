@@ -42,9 +42,9 @@ class ProjectRequestDocumentFactoryTests extends AbstractInitializrStatTests {
 		def document = factory.createDocument(event)
 		assertEquals event.timestamp, document.generationTimestamp
 		assertEquals null, document.requestIp
-		assertEquals 'com.example', document.groupId
+		assertEquals 'lds.demo', document.groupId
 		assertEquals 'demo', document.artifactId
-		assertEquals 'com.example', document.packageName
+		assertEquals 'lds.demo', document.packageName
 		assertEquals '1.2.3.RELEASE', document.bootVersion
 		assertEquals '1.8', document.javaVersion
 		assertEquals 'java', document.language

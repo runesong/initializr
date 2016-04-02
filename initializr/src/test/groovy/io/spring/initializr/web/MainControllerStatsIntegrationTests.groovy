@@ -149,7 +149,7 @@ class MainControllerStatsIntegrationTests extends AbstractInitializrControllerIn
 		def content = statsMockController.stats[0]
 
 		def json = slurper.parseText(content.json)
-		assertEquals 'com.example', json.groupId
+		assertEquals 'lds.demo', json.groupId
 		assertEquals 'demo', json.artifactId
 		assertEquals true, json.invalid
 		assertEquals true, json.invalidType

@@ -213,7 +213,7 @@
     "type": "TEXT"
   },
   "groupId": {
-    "content": "com.example",
+    "content": "lds.demo",
     "description": "project coordinates",
     "id": "groupId",
     "title": "Group",
@@ -273,7 +273,7 @@
     "type": "TEXT"
   },
   "packageName": {
-    "content": "com.example",
+    "content": "lds.demo",
     "description": "root package",
     "id": "packageName",
     "title": "Package Name",

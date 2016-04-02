@@ -183,7 +183,7 @@
   },
   "groupId": {
     "type": "text",
-    "default": "com.example"
+    "default": "lds.demo"
   },
   "artifactId": {
     "type": "text",
@@ -203,6 +203,6 @@
   },
   "packageName": {
     "type": "text",
-    "default": "com.example"
+    "default": "lds.demo"
   }
 }

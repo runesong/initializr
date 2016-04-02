@@ -27,7 +27,7 @@ import static org.junit.Assert.assertTrue
  */
 class ProjectAssert {
 
-	public static final DEFAULT_PACKAGE_NAME = 'com.example'
+	public static final DEFAULT_PACKAGE_NAME = 'lds.demo'
 
 	public static final DEFAULT_APPLICATION_NAME = 'Main'
 
@@ -132,7 +132,7 @@ class ProjectAssert {
 	ProjectAssert isJavaWarProject(String expectedApplicationName) {
 		isJavaProject(DEFAULT_PACKAGE_NAME, expectedApplicationName)
 				.hasStaticAndTemplatesResources(true)
-				.hasFile('src/main/java/com/example/ServletInitializer.java')
+				.hasFile('src/main/java/lds/demo/ServletInitializer.java')
 	}
 
 	ProjectAssert isJavaWarProject() {

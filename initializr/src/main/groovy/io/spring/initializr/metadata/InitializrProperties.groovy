@@ -69,7 +69,7 @@ class InitializrProperties extends InitializrConfiguration {
 	 * GroupId meta-data.
 	 */
 	@JsonIgnore
-	final SimpleElement groupId = new SimpleElement(value: 'com.example')
+	final SimpleElement groupId = new SimpleElement(value: 'lds.demo')
 
 	/**
 	 * ArtifactId meta-data.

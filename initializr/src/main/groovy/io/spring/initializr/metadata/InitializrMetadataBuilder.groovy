@@ -129,7 +129,7 @@ class InitializrMetadataBuilder {
 			metadata.description.content = 'Demo project for Spring Boot'
 		}
 		if (!metadata.groupId.content) {
-			metadata.groupId.content = 'com.example'
+			metadata.groupId.content = 'lds.demo'
 		}
 		if (!metadata.version.content) {
 			metadata.version.content = '0.0.1-SNAPSHOT'

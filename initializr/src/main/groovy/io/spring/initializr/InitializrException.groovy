@@ -25,5 +25,6 @@ import groovy.transform.InheritConstructors
  * @since 1.0
  */
 @InheritConstructors
-class InitializrException extends RuntimeException {
+class InitializrException extends RuntimeException
+{
 }
